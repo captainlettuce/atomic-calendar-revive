@@ -101,7 +101,7 @@ export interface atomicCardConfig {
 	calEventIcon3Filter?: string;
 	calEventTime?: boolean;
 	calShowDescription: boolean;
-	calShowWeekNumbers?: boolean;
+	calShowWeekNumbers: boolean;
 	firstDayOfWeek?: number;
 	blacklist?: string;
 	whitelist?: string;
