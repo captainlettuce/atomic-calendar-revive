@@ -259,6 +259,14 @@ export const styles: CSSResultGroup = css`
 		color: var(--cal-day-color);
 	}
 
+	.calWeekNumbers {
+		height: 38px;
+		font-size: 95%;
+		max-width: 38px;
+		margin: auto;
+		opacity: 0.8;
+	}
+
 	.calDay {
 		height: 38px;
 		font-size: 95%;

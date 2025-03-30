@@ -579,7 +579,7 @@ export class AtomicCalendarRevive extends LitElement {
 			}
 			if (i < 35 || showLastRow) {
 				return html`
-					${i % 7 === 0 ? html`<tr class="cal"></tr>` : ''}
+					${i % 7 === 0 ? html`<tr class="cal"></tr>${this._config.calShowWeekNumbers ? html`<td class"cal"><div class ="calWeekNumbers" style="position: relative; top: 5%;">${day.date.isoWeek()}</div></td>` : '' }` : ''}
 					<td
 						@click="${() => this.handleCalendarEventSummary(day, true)}"
 						class="cal ${dayStyleSat} ${dayStyleSun} ${dayStyleOtherMonth}"
