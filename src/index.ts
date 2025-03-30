@@ -619,6 +619,7 @@ export class AtomicCalendarRevive extends LitElement {
 		}
 		const { month } = this;
 		const weekDays = dayjs.weekdaysMin(true);
+		const htmlWeekNumbers = this._config.calShowWeekNumbers ? html`<th class="cal" style="color: ${this._config.calWeekDayColor}; opacity: 0.8">w</th>` : '';
 		const htmlDayNames = weekDays.map(
 			(day) => html`<th class="cal" style="color:  ${this._config.calWeekDayColor};">${day}</th>`,
 		);
@@ -633,6 +634,7 @@ export class AtomicCalendarRevive extends LitElement {
 				>
 					<thead>
 						<tr>
+							${htmlWeekNumbers}
 							${htmlDayNames}
 						</tr>
 					</thead>
